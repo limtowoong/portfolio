@@ -35,15 +35,15 @@ public class baseballgame_0420 {
 				answer[2] = sc.nextInt();
 				
 				// strike를 판단하는 조건문
-				for(int i=0; i<answer.length; i++) {
-					if(num[i]==answer[i]) {
-						strike++;
+				for(int i=0; i<answer.length; i++) {		//i를 answer 배열 길이만큼 반복
+					if(num[i]==answer[i]) {			//num 배열 i번째와 answer 배열 i번째에 값이 같으면 true
+						strike++;		//스트라이크 값에 1을 더함
 					}
 				}
 				// ball을 판단하는 조건문
-				if(num[0]==answer[1]||num[0]==answer[2]) ball++;
-				if(num[1]==answer[0]||num[1]==answer[2]) ball++;
-				if(num[2]==answer[0]||num[2]==answer[1]) ball++;
+				if(num[0]==answer[1]||num[0]==answer[2]) ball++;		//0번과 1번 또는 0번과 2번이 같으면 볼값 +1
+				if(num[1]==answer[0]||num[1]==answer[2]) ball++;		//1번과 0번 또는 1번과 2번이 같으면 볼값 +1
+				if(num[2]==answer[0]||num[2]==answer[1]) ball++;		//2번과 0번 또는 2번과 1번이 같으면 볼값 +1
 				
 				System.out.println(strike+" 스트라이크! "+ball+" 볼!");
 				
