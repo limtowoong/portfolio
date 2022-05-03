@@ -8,7 +8,7 @@ public class ChangeExchange_0503 {
 		
 		for(int a=1; a<num.length; a++) {
 			
-			System.out.println(a+"¹øÂ°");
+			System.out.println(a+"번째");
 			
 			for(int i=0; i<num.length-1; i++) {
 				
@@ -18,7 +18,7 @@ public class ChangeExchange_0503 {
 					num[i] = num[i+1];
 					num[i=1] = temp;
 			
-					System.out.print("±³È¯ÀÛ¾÷ ");
+					System.out.print("교환작업");
 					
 					for(int j=0; j<num.length; j++) {
 						
