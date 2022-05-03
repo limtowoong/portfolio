@@ -48,7 +48,7 @@ public class baseballgame_0420 {
 				System.out.println(strike+" 스트라이크! "+ball+" 볼!");
 				
 				if(strike==3) {
-					System.out.println("ㅊㅋ");
+					System.out.println("축하합니다.");		//스트라이크가 3개면 게임 끝
 					break;
 				}
 			}
