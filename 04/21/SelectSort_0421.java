@@ -9,7 +9,7 @@ public class SelectSort_0421 {
 		int min = 0;
 		int temp;
 		
-		System.out.println("ÃÖÃÊ ¹è¿­ÀÇ »óÅÂ");
+		System.out.println("ìµœì´ˆ ë°°ì—´ì˜ ìƒíƒœ");
 		System.out.println("-------------------------------------------");
 		for(int i=0; i<A.length; i++) {
 			System.out.print(A[i]+" ");
@@ -18,26 +18,26 @@ public class SelectSort_0421 {
 		System.out.println("-------------------------------------------");
 		
 		for(int num=0; num<A.length; num++) {
-			System.out.println("A["+num+"] ÀÚ¸®¿¡ ³ÖÀ» ÃÖ¼Ò°ªÀ» Ã£½À´Ï´Ù.");
+			System.out.println("A["+num+"] ìë¦¬ì— ë„£ì„ ìµœì†Œê°’ì„ ì°¾ìŠµë‹ˆë‹¤.");
 			min = num;
-			System.out.println("ÇöÀç min: "+min+", A[min]: "+A[min]);
+			System.out.println("í˜„ì¬ min: "+min+", A[min]: "+A[min]);
 			System.out.println("-------------------------------------------");
 			
 			for(int i=num; i<A.length; i++) {
-				System.out.println("ÇöÀç i:"+i+", A[i]:"+A[i]+" A[min]:"+A[min]+" ºñ±³");
+				System.out.println("í˜„ì¬ i:"+i+", A[i]:"+A[i]+" A[min]:"+A[min]+" ë¹„êµ");
 				if(A[i]<A[min]) {
 					min = i;
-					System.out.println("min °»½Å, ÇöÀç min: "+min);
+					System.out.println("min ê°±ì‹ , í˜„ì¬ min: "+min);
 				}
 			}
-			// Á¦ÀÏ ÀÛÀº³ğ ¸Ç ¾ÕÀ¸·Î º¸³»±â
-			// A[num]°ú A[min]¹øÂ° ±³È¯ÀÛ¾÷
+			// ì œì¼ ì‘ì€ë†ˆ ë§¨ ì•ìœ¼ë¡œ ë³´ë‚´ê¸°
+			// A[num]ê³¼ A[min]ë²ˆì§¸ êµí™˜ì‘ì—…
 			temp = A[num];
 			A[num] = A[min];
 			A[min] = temp;
 
 			System.out.println("");
-			System.out.println(num+"¹øÂ° ¹è¿­ÀÇ »óÅÂ");
+			System.out.println(num+"ë²ˆì§¸ ë°°ì—´ì˜ ìƒíƒœ");
 			for(int i=0; i<A.length; i++) {
 				System.out.print(A[i]+" ");
 			}
@@ -45,7 +45,7 @@ public class SelectSort_0421 {
 
 		System.out.println("");
 		System.out.println("-------------------------------------------");
-		System.out.println("ÃÖÃÊ ¹è¿­ÀÇ »óÅÂ");
+		System.out.println("ìµœì´ˆ ë°°ì—´ì˜ ìƒíƒœ");
 		for(int i=0; i<A.length; i++) {
 			System.out.print(A[i]+" ");
 		}
