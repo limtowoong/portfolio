@@ -4,10 +4,9 @@ public class SelectSort_0421 {
 
 	public static void main(String[] args) {
 		
-		//	int[] A = new int[5];
-		int A[] = {18, 5, 21, 2, 7};
-		int min = 0;
-		int temp;
+		int A[] = {18, 5, 21, 2, 7};		//난수 a에 18, 5, 21, 2, 7를 넣음
+		int min = 0;			//min 선언 (최소값)
+		int temp;			//temp 선언 (임시로 저장할 값)
 		
 		System.out.println("최초 배열의 상태");
 		System.out.println("-------------------------------------------");
