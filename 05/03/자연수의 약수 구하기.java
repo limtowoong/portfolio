@@ -8,10 +8,10 @@ public class NK {
 
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Ã¹¹øÂ° ÀÚ¿¬¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì²«ë²ˆì§¸ ìì—°ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		int N = sc.nextInt();
 
-		System.out.println("µÎ¹øÂ° ÀÚ¿¬¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ë‘ë²ˆì§¸ ìì—°ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		int K = sc.nextInt();
 		
 		int[] num = new int[N];
@@ -29,7 +29,7 @@ public class NK {
 					System.out.println("-1");
 				}
 				else {
-					System.out.println(N+"ÀÇ "+K+"¹øÂ° ¾à¼ö´Â"+num[K-1]);
+					System.out.println(N+"ì˜ "+K+"ë²ˆì§¸ ì•½ìˆ˜ëŠ”"+num[K-1]);
 				}
 
 		
