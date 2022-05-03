@@ -18,7 +18,7 @@
 			int num =x*y;
 			
 			System.out.println();
-			System.out.println("* ±¸±¸´Ü "+x+"´Ü¿¡ ´ëÇÑ ¹®Á¦ÀÔ´Ï´Ù.");
+			System.out.println("* êµ¬êµ¬ë‹¨ "+x+"ë‹¨ì— ëŒ€í•œ ë¬¸ì œì…ë‹ˆë‹¤.");
 			System.out.println();
 			
 			System.out.print(x+"*"+y+"=");
@@ -31,9 +31,9 @@
 			int inputNum = new Integer(user).intValue();
 			
 			if(num==inputNum) {
-				System.out.println("¸Â¾Ò½À´Ï´Ù!");
+				System.out.println("ë§ì•˜ìŠµë‹ˆë‹¤!");
 			}else {
-				System.out.println("Æ²·È½À´Ï´Ù. Á¤´äÀº"+num+"ÀÔ´Ï´Ù.");
+				System.out.println("í‹€ë ¸ìŠµë‹ˆë‹¤. ì •ë‹µì€"+num+"ì…ë‹ˆë‹¤.");
 			}
 		}
 
