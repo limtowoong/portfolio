@@ -21,11 +21,11 @@ public class S21516_Gugudan_Game {
     int num= x*y;                                          //사용자 입력 수(구구단) * 난수(1~9) 값 저장
 
     System.out.println();
-    System.out.println("* 구구단 "+ x + "단에 대한 문제입니다");          //구구단 단계를 보여줌
+    System.out.println("* 구구단 "+ x + "단에 대한 문제입니다");          //구구단 단계를 출력
     System.out.println();
 
 
-    System.out.print(x +" * "+ y +" = ");         //계산 방식을 보여줌
+    System.out.print(x +" * "+ y +" = ");         //계산 방식을 출력
  
     BufferedReader in= new BufferedReader(new InputStreamReader(System.in));    
     //데이터를 읽어들여 임시저장하는 BufferedReader() 인스턴스 in 생성
