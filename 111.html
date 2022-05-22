@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        filter.hover{
+            filter: opacity(0.5) 0 0 0 black;
+        }
+        .jb-box { 
+            overflow: hidden;
+            margin: 0px auto;
+            position: relative;
+        }
+        video {
+            width: 100%;
+        }
+        div.relative {
+            width: 100%;
+            overflow: hidden;
+            position: absolute;
+            top: 500px;
+        }
+        td{
+            margin: 7px 0px;
+        }
+        body{
+            margin: 0; padding: 0;
+        }
+        table {
+            background-color: rgb(17,17,17);
+            height: 80px;
+        }
+        p {
+            color: white; 
+            background-color: rgb(17, 17, 17); 
+            font-size: 13px;
+            margin : 0px 4px 0px 0px;
+            padding: 7.5px 14px;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+        p:hover{
+            background-color:rgb(51,51,51);
+        }
+        .dropdown-button {
+			background-color: rgb(17, 17, 17);
+          	color : white;
+			margin : 0px 4px 0px 0px;
+			padding: 7.5px 16px;
+			font-size: 13px;
+          	border-radius: 7px;
+			border: none;
+         	text-align: center;	
+		}
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: rgb(51,51,51);
+         	padding: 10px 15px 10px 15px;
+            
+		}
+		.dropdown-content a {
+			color: rgb(190,190,190);
+			font-size: 13px;
+          	border-radius: 7px;
+			text-decoration: none;
+			display: block;
+          	padding: 10px 70px 10px 15px;
+            margin : 5px 0px 0px 0px;
+            
+		}
+		.dropdown-content a:hover { background-color: rgb(68,68,68); color:rgb(240,240,240);}
+		.dropdown:hover .dropdown-content { display: block;}
+		.dropdown:hover .dropdown-button { background-color: rgb(51,51,51); }
+    </style>
+</head>
+<body>
+    <table class="stop">
+        <tr>
+            <td style="background-color: rgb(17,17,17); width:28px;"></td>
+            <td><img src="ddddd.png"></td>
+            <td style="background-color: rgb(17,17,17); width:17px;"></td>
+            <td><img src="ffff.jpg"></td>                       
+         <td style="background-color: rgb(17,17,17); width:8px;"></td>
+            <td>
+                <p onclick=window.open("https://www.leagueoflegends.com/ko-kr/how-to-play/?_gl=1*habic2*_ga*ODIwNTA0NDczLjE2NTMxMzY5MTk.*_ga_FXBJE5DEDD*MTY1MzE1NTgxNC42LjEuMTY1MzE1NjE0Mi4xMQ..&_ga=2.228684572.1499833682.1653136919-820504473.1653136919")><b>게임정보</b></p>
+            </td>                      
+            <td>
+                <p onclick=window.open("https://www.leagueoflegends.com/ko-kr/champions/?_gl=1*1t6trg1*_ga*ODIwNTA0NDczLjE2NTMxMzY5MTk.*_ga_FXBJE5DEDD*MTY1MzE1NTgxNC42LjEuMTY1MzE1NjA5My42MA..&_ga=2.225605658.1499833682.1653136919-820504473.1653136919")><b>챔피언</b></p>
+            </td>
+            <td>
+                <div class="dropdown">
+                    <button class="dropdown-button"><b>새소식 ▾</b></button>
+                      <div class="dropdown-content">
+                        <a href="https://www.leagueoflegends.com/ko-kr/news/?_gl=1*1qa2b1t*_ga*ODIwNTA0NDczLjE2NTMxMzY5MTk.*_ga_FXBJE5DEDD*MTY1MzE1MzMzNi41LjEuMTY1MzE1MzM4MC4xNg..&_ga=2.263339788.1499833682.1653136919-820504473.1653136919">전체</a>
+                        <a href="https://www.leagueoflegends.com/ko-kr/news/game-updates/">게임 업데이트</a>
+                        <a href="https://www.leagueoflegends.com/ko-kr/news/notices/">공지</a>
+                        <a href="https://www.leagueoflegends.com/ko-kr/news/dev/">개발자 블로그</a>
+                        <a href="https://www.leagueoflegends.com/ko-kr/news/lore/">세계관</a>
+                        <a href="https://www.leagueoflegends.com/ko-kr/news/media/">미디어</a>
+                        <a href="https://www.leagueoflegends.com/ko-kr/news/merch/">라이엇 스토어</a>
+                        <a href="https://www.leagueoflegends.com/ko-kr/news/esports/">E스포츠</a>
+                        <a href="https://www.leagueoflegends.com/ko-kr/news/riot-games/">라이엇 게임즈</a>
+                        <a href="https://www.leagueoflegends.com/ko-kr/news/community/">커뮤니티</a>
+                        <a href="#">__________________</a>
+                      </div>
+                  </div>
+            </td>
+            <td>
+                <p onclick=window.open("https://www.leagueoflegends.com/ko-kr/news/tags/patch-notes/")><b>패치 노트</b></p>
+            </td>
+            <td>
+                <p onclick=window.open("https://download.kr.riotgames.com/league?_gl=1*tgu87b*_ga*ODIwNTA0NDczLjE2NTMxMzY5MTk.*_ga_FXBJE5DEDD*MTY1MzE2NTEyNC44LjEuMTY1MzE2NTEzMi41Mg..")><b>다운로드</b></p>
+            </td>
+            <td>
+                <p onclick=window.open("https://lolesports.com/")><b>E스포츠↗</b></p>
+            </td>
+            <td>
+                <div class="dropdown">
+                    <button class="dropdown-button"><b>알아보기 ▾</b></button>
+                      <div class="dropdown-content">
+                        <a href="https://event.leagueoflegends.co.kr/league-displays/">LoL 디스플레이</a>
+                        <a href="https://store.leagueoflegends.co.kr/">모바일 상점</a>
+                        <a href="https://www.leagueoflegends.com/ko-kr/news/riot-games/hello-riot-mobile-farewell-league/?_gl=1*1l6dvyd*_ga*ODIwNTA0NDczLjE2NTMxMzY5MTk.*_ga_FXBJE5DEDD*MTY1MzE2NTEyNC44LjEuMTY1MzE2NTM5OC4zOQ..&_ga=2.123875338.1499833682.1653136919-820504473.1653136919">라이엇 모바일</a>
+                        <a href="https://kr.leagueoflegends.com/ko/featured/events/avatar-creator?_gl=1*402ns5*_ga*ODIwNTA0NDczLjE2NTMxMzY5MTk.*_ga_FXBJE5DEDD*MTY1MzE2NTEyNC44LjEuMTY1MzE2NTQxNy4yMA..&_ga=2.196703148.1499833682.1653136919-820504473.1653136919#/">아바타 생성기</a>
+                        <a href="#">__________________</a>
+                      </div>
+                  </div>
+            </td>
+            <td>
+                <p onclick=window.open("https://universe.leagueoflegends.com/ko_KR/?_gl=1*pt4paw*_ga*ODIwNTA0NDczLjE2NTMxMzY5MTk.*_ga_FXBJE5DEDD*MTY1MzE2NTEyNC44LjEuMTY1MzE2NTQzNS4y&_ga=2.154294456.1499833682.1653136919-820504473.1653136919")><b>유니버스↗</b></p>
+            </td>
+            <td>
+                <p onclick=window.open("https://www.leagueoflegends.co.kr/?m=riot-store")><b>라이엇 스토어↗</b></p>
+            </td>
+            <td>
+                <p onclick=window.open("https://support.riotgames.com/hc/ko?_gl=1*16hag58*_ga*ODIwNTA0NDczLjE2NTMxMzY5MTk.*_ga_FXBJE5DEDD*MTY1MzE2NTEyNC44LjEuMTY1MzE2NTUyMy4zNA..")><b>고객지원↗</b></p>
+            </td>
+            <td style="background-color: rgb(17,17,17); width:480px;"></td>
+            <td><img src="ssss.png"></td>
+            <td>
+                <p style="
+                background-color: rgb(40,40,40);
+                color: white;
+                padding: 8px 16px;
+                font-size: 13px;
+                border-radius: 7px;" onclick=window.open("https://auth.riotgames.com/login#client_id=prod-xsso-leagueoflegends&code_challenge=89a9aFBDJUw2R6m9gNqS_RMdJ5DM3-Q0wQgdaP1kWYQ&code_challenge_method=S256&redirect_uri=https%3A%2F%2Fxsso.leagueoflegends.com%2Fredirect&response_type=code&scope=openid%20account&state=953e39e89274e14b41d1ef7fc6")><b>로그인</b></p>
+            </td>
+            <td class="filter.hover">
+                <p style="
+                background-color: #0BC4E2;
+                border-radius: 12px;
+                font-size: 13px;
+                color: #111111;
+                margin: 0px 24px 0px 3px;
+                padding : 8px 16px;"
+                onclick=window.open("https://signup.kr.riotgames.com/?_gl=1*kw6r1u*_ga*ODIwNTA0NDczLjE2NTMxMzY5MTk.*_ga_FXBJE5DEDD*MTY1MzIxNTM5OS4xNi4xLjE2NTMyMTc2NzcuNTc.")><b>회원가입</b></p>
+            </td>
+        </tr>
+    </table>
+    <img src="33333.png"style="height: 500px; width:100%;/>
+    <div class="jb-box">
+        <video muted autoplay loop>
+          <source src="noise.webm" type="video/mp4">
+          <strong>Your browser does not support the video tag.</strong>
+        </video>
+      </div>
+      <div class="relative">
+        <video muted autoplay loop height="733px">
+          <source src="vd.webm" type="video/mp4">
+      </div>
+      
+</body>
+</html>
