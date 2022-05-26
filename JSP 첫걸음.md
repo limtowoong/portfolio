@@ -47,7 +47,7 @@
 ### 코드
 ![image](https://user-images.githubusercontent.com/104752202/170403775-6ab93f63-77a4-4bcd-a25e-ad641e5bc582.png)
 ### 실행 결과
-![image](https://user-images.githubusercontent.com/104752202/170403811-b5a304f6-a4b5-423d-98e8-e41dd2146891.png)
+![image](https://user-images.githubusercontent.com/104752202/170408430-6624bcb0-8138-45fa-b11b-ac7da201b7f7.png)
 
 ## EXAMPLE 4-1
 
