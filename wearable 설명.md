@@ -1,13 +1,20 @@
 # 코드
 
-<html>
-<head>
-<meta charset="UTF-8">
-<style>
-	body {margin : 40px;}
-	ul, li{ list-style : none; }
+	<html>
+	<head>
+	<meta charset="UTF-8">
+	<style>
+	
+	body {
+	margin : 40px;
+	}
+	
+	ul, li{
+	list-style : none; 
+	}
+	
 	#header {
-	width:750px;
+	width:750px
 	
 	}
 	#nav li{
@@ -42,9 +49,9 @@
 	text-align : center;
 	color : white;	
 	}
-</style>
-</head>
-<body>
+	</style>
+	</head>
+	<body>
 	
 	<header id = "header">
 		<img src = "img/main_img.jpg">
@@ -100,8 +107,8 @@
 		성일정보고등학교
 	</footer>
 	
-</body>
-</html>
+	</body>
+	</html>
 
 # 실행
 
