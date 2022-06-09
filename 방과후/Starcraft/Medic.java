@@ -5,8 +5,8 @@ public class Medic {
 	int mp;
 	
 public Medic() {
-	this("ÀÌ¸§¾øÀ½", 60);
-//	this.name = "ÀÌ¸§¾øÀ½";
+	this("Ã€ÃŒÂ¸Â§Â¾Ã¸Ã€Â½", 60);
+//	this.name = "Ã€ÃŒÂ¸Â§Â¾Ã¸Ã€Â½";
 // 	this.mp = 60;
 }
 	
