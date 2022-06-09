@@ -5,14 +5,14 @@ public class Starcraft {
 
 	public static void main(String[] args) {
 		
-		Marine marine = new Marine("·¹ÀÌ³Ê", 100);
-		Medic medic = new Medic("À¯¹Ì", 100);
+		Marine marine = new Marine("ë ˆì´ë„ˆ", 100);
+		Medic medic = new Medic("ìœ ë¯¸", 100);
 		Medic medic2 = new Medic();
 		
-	/*	marine.name = "·¹ÀÌ³Ê";
+	/*	marine.name = "ë ˆì´ë„ˆ";
 		marine.hp = 100;
 		
-		medic.name = "À¯¹Ì";
+		medic.name = "ìœ ë¯¸";
 		medic.mp = 100; 	*/
 		
 		int menu;
@@ -20,7 +20,7 @@ public class Starcraft {
 		
 		while(keepLoop) {
 			if(marine.hp<=0) {
-				System.out.printf("< %s >°¡ Á×¾ú½À´Ï´Ù. ³¡! \n", marine.name);
+				System.out.printf("< %s >ê°€ ì£½ì—ˆìŠµë‹ˆë‹¤. ë! \n", marine.name);
 				break;
 			}
 		menu = select();
@@ -32,10 +32,10 @@ public class Starcraft {
 			heal(marine, medic);
 			break;
 		case 3 :
-			System.out.println("°ÔÀÓÀ» Á¾·áÇÕ´Ï´Ù.");
+			System.out.println("ê²Œì„ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 			break;
 		default :
-			System.out.println("´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä.");
+			System.out.println("ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš”.");
 			}
 		}
 
@@ -50,23 +50,23 @@ public class Starcraft {
 			if(marine.hp>100)
 				marine.hp = 100;
 			
-			System.err.printf("< %s >·Î Ä¡·á¸¦ ½ÃÀÛÇÕ´Ï´Ù \n", medic.name);
-			System.out.printf("¸¶³ª°¡ %d ³²¾Ò½À´Ï´Ù \n", medic.mp);
-			System.out.printf("< %s >°¡ Ä¡·á¹Ş¾Æ HP°¡ %d µÇ¾ú½À´Ï´Ù. \n", marine.name, marine.hp);
+			System.err.printf("< %s >ë¡œ ì¹˜ë£Œë¥¼ ì‹œì‘í•©ë‹ˆë‹¤ \n", medic.name);
+			System.out.printf("ë§ˆë‚˜ê°€ %d ë‚¨ì•˜ìŠµë‹ˆë‹¤ \n", medic.mp);
+			System.out.printf("< %s >ê°€ ì¹˜ë£Œë°›ì•„ HPê°€ %d ë˜ì—ˆìŠµë‹ˆë‹¤. \n", marine.name, marine.hp);
 		}else {
-			System.out.printf("¸¶³ª°¡ ºÎÁ·ÇÕ´Ï´Ù(%d)\n",medic.mp);
+			System.out.printf("ë§ˆë‚˜ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤(%d)\n",medic.mp);
 		}
 	}
 
 	private static void stimpack(Marine marine) {
-		 System.out.printf("< %s >°¡ ½ºÆÀÆÑÀ» »ç¿ëÇÕ´Ï´Ù '»ç¿ë' \n",   marine.name);
+		 System.out.printf("< %s >ê°€ ìŠ¤íŒ€íŒ©ì„ ì‚¬ìš©í•©ë‹ˆë‹¤ 'ì‚¬ìš©' \n",   marine.name);
 		 marine.hp = marine.hp - 10;
-		 System.out.printf("°ø°İ·ÂÀÌ Áõ°¡ÇÏ°í HP°¡ %d ³²¾Ò½À´Ï´Ù \n", marine.hp);
+		 System.out.printf("ê³µê²©ë ¥ì´ ì¦ê°€í•˜ê³  HPê°€ %d ë‚¨ì•˜ìŠµë‹ˆë‹¤ \n", marine.hp);
 	}
 
 	private static int select() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("½ºÆÀÆÑ »ç¿ë(1), Ä¡·á (2), ³¡³»±â(3)");
+		System.out.println("ìŠ¤íŒ€íŒ© ì‚¬ìš©(1), ì¹˜ë£Œ (2), ëë‚´ê¸°(3)");
 		return sc.nextInt();
 		
 	}
