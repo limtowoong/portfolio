@@ -3,8 +3,8 @@ package calc;
 import java.util.Scanner;
 public class calc {
 	public static void main(String[] args) {
-		// µÎ ¼ıÀÚ, ¿¬»êÀÚ ÀÔ·Â¹Ş¾Æ¼­ ÇØ´ç °è»êÇÏ±â		
-		// 1. ¼ıÀÚ µÎ°³ ÀÔ·Â¹Ş±â
+		// ë‘ ìˆ«ì, ì—°ì‚°ì ì…ë ¥ë°›ì•„ì„œ í•´ë‹¹ ê³„ì‚°í•˜ê¸°		
+		// 1. ìˆ«ì ë‘ê°œ ì…ë ¥ë°›ê¸°
 		int num1, num2;
 		Scanner sc = new Scanner(System.in);
 		
@@ -14,15 +14,15 @@ public class calc {
 		while(loop) {
 			System.out.print("num1?: ");
 			num1 = sc.nextInt();
-			// ÄÁÆ®·Ñ + ¾ËÆ® + ¾Æ·¡¹æÇâÅ°
+			// ì»¨íŠ¸ë¡¤ + ì•ŒíŠ¸ + ì•„ë˜ë°©í–¥í‚¤
 			System.out.print("num2?: ");
 			num2 = sc.nextInt();
 			
-			// 2. »çÄ¢¿¬»êÁß¿¡ ¹¹ÇÒÁö ÀÔ·Â¹Ş±â
-			System.out.print("´õÇÏ±â(1),»©±â(2),°öÇÏ±â(3),³ª´©±â(4),Á¾·á(5):");
+			// 2. ì‚¬ì¹™ì—°ì‚°ì¤‘ì— ë­í• ì§€ ì…ë ¥ë°›ê¸°
+			System.out.print("ë”í•˜ê¸°(1),ë¹¼ê¸°(2),ê³±í•˜ê¸°(3),ë‚˜ëˆ„ê¸°(4),ì¢…ë£Œ(5):");
 			int op = sc.nextInt();
 			
-			switch(op) {  // 3. ¿¬»êÀÚ¿¡ µû¸¥ °è»ê ¶§·Á
+			switch(op) {  // 3. ì—°ì‚°ìì— ë”°ë¥¸ ê³„ì‚° ë•Œë ¤
 			case 1 :
 				add(num1, num2);
 				break;
@@ -39,10 +39,10 @@ public class calc {
 				break;
 			case 5 :
 				loop = false;
-				System.out.println("ÀÀ °¡¼¼¿ä~");
+				System.out.println("ì‘ ê°€ì„¸ìš”~");
 				break;
 			default :
-				System.out.println("ÀÀ ¾Æ´Ï¾ß~");
+				System.out.println("ì‘ ì•„ë‹ˆì•¼~");
 			}		
 		}
 	}
