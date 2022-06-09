@@ -110,6 +110,6 @@
 	</body>
 	</html>
 
-# 실행
+# 실행 결과
 
 ![image](https://user-images.githubusercontent.com/104752202/172753433-a9d1fcc4-44ee-444f-a1de-3e71175e2a2b.png)
