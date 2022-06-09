@@ -7,7 +7,7 @@ public class ExamList {
 	private int current;
 	
 	public void ExamPrint() {
-		System.out.println(" ¼ºÀûÃâ·Â @@@@@@");
+		System.out.println(" ì„±ì ì¶œë ¥ @@@@@@");
 		int kor, eng, math;
 		
 		for(int i=0; i<current; i++) {
@@ -19,11 +19,11 @@ public class ExamList {
 			int total = kor + eng + math;
 			float avg = total/3.0f;
 			
-			System.out.printf("±¹¾î:%d \t", kor);
-			System.out.printf("¿µ¾î:%d \t", eng);
-			System.out.printf("¼öÇĞ:%d \n", math);
-			System.out.printf("ÇÕ°è:%d \t", total);
-			System.out.printf("Æò±Õ:%f \n", avg);
+			System.out.printf("êµ­ì–´:%d \t", kor);
+			System.out.printf("ì˜ì–´:%d \t", eng);
+			System.out.printf("ìˆ˜í•™:%d \n", math);
+			System.out.printf("í•©ê³„:%d \t", total);
+			System.out.printf("í‰ê· :%f \n", avg);
 			System.out.println("@@@@@@@@@@@@@@@@@@@@");
 		}		
 	}	
@@ -31,33 +31,33 @@ public class ExamList {
 	public void ExamAdd() {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("@@@@@@ ¼ºÀûÀÔ·Â");
+		System.out.println("@@@@@@ ì„±ì ì…ë ¥");
 		int kor, eng, math;
 		
 		do {
-			System.out.printf("±¹¾î¼ºÀû : ");
+			System.out.printf("êµ­ì–´ì„±ì  : ");
 			kor = sc.nextInt();
 			
 			if(kor<0 || kor>100) {
-				System.out.println("´Ù½ÃÇØ!(0~100)");
+				System.out.println("ë‹¤ì‹œí•´!(0~100)");
 			}			
 		}while(kor<0 || kor>100);
-		// ÄÁÆ®·Ñ + ¾ËÆ® + ¡é
+		// ì»¨íŠ¸ë¡¤ + ì•ŒíŠ¸ + â†“
 		do {
-			System.out.printf("¿µ¾î¼ºÀû : ");
+			System.out.printf("ì˜ì–´ì„±ì  : ");
 			eng = sc.nextInt();
 			
 			if(eng<0 || eng>100) {
-				System.out.println("´Ù½ÃÇØ!(0~100)");
+				System.out.println("ë‹¤ì‹œí•´!(0~100)");
 			}			
 		}while(eng<0 || eng>100);
 		
 		do {
-			System.out.printf("¼öÇĞ¼ºÀû : ");
+			System.out.printf("ìˆ˜í•™ì„±ì  : ");
 			math = sc.nextInt();
 			
 			if(math<0 || math>100) {
-				System.out.println("´Ù½ÃÇØ!(0~100)");
+				System.out.println("ë‹¤ì‹œí•´!(0~100)");
 			}			
 		}while(math<0 || math>100);
 		
@@ -69,14 +69,14 @@ public class ExamList {
 		
 		
 		if(exams.length == current) {
-			// 1. ÀÓ½Ã temp ¸¸µé±â
+			// 1. ì„ì‹œ temp ë§Œë“¤ê¸°
 			Exam[] temp = new Exam[exams.length + 5];
 			
-			// 2. °ª ¿Å±â±â
+			// 2. ê°’ ì˜®ê¸°ê¸°
 			for(int i=0; i<exams.length; i++) {
 				temp[i] = exams[i];
 			}
-			// 3. exams°¡ temp¸¦ ¸Ô°Ô ÇÏ±â
+			// 3. examsê°€ tempë¥¼ ë¨¹ê²Œ í•˜ê¸°
 			exams = temp;
 		}
 		
