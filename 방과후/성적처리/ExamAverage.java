@@ -20,11 +20,11 @@ public class ExamAverage {
 					list.ExamPrint();
 					break;
 				case 3 :
-					System.out.println("Àß°¡~");
+					System.out.println("ì˜ê°€~");
 					keepLoop = false;
 					break;
 				default :
-					System.out.println("Àå³­Ä¡³ª!");
+					System.out.println("ì¥ë‚œì¹˜ë‚˜!");
 			}			
 		}
 	}
@@ -33,8 +33,8 @@ public class ExamAverage {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("**¸ŞÀÎ¸Ş´º**");
-		System.out.print("ÀÔ·Â(1)  Ãâ·Â(2)  Á¾·á(3)");
+		System.out.println("**ë©”ì¸ë©”ë‰´**");
+		System.out.print("ì…ë ¥(1)  ì¶œë ¥(2)  ì¢…ë£Œ(3)");
 		
 		return sc.nextInt();
 	}
