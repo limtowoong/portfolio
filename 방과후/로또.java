@@ -3,17 +3,17 @@ import java.util.Random;
 
 public class LottoP {
 	public static void main(String[] args) {
-		// ·Î¶Ç ¼ıÀÚ »Ì¾Æ³»±â
+		// ë¡œë˜ ìˆ«ì ë½‘ì•„ë‚´ê¸°
 		int[] lotto = new int[6];
 		
 		Random r = new Random();
 
-		// 1~45 ¼ıÀÚ Áß¿¡ ·£´ıÀ¸·Î 6°³¸¦ »Ì¾Æ³»¶ó!
+		// 1~45 ìˆ«ì ì¤‘ì— ëœë¤ìœ¼ë¡œ 6ê°œë¥¼ ë½‘ì•„ë‚´ë¼!
 		lotto[0] = r.nextInt(44)+1;
 		for(int i=1; i<lotto.length; i++) {
 			lotto[i] = r.nextInt(44)+1;
-			for(int j=i; j<=0; j--) { // i¹øÂ° ÀÌÀüÀÇ ¼ö¸¦ ÈÈ´Â ¹İº¹¹®
-				// Áßº¹ÀÌ ÀÖ³Ä?				
+			for(int j=i; j<=0; j--) { // ië²ˆì§¸ ì´ì „ì˜ ìˆ˜ë¥¼ í›‘ëŠ” ë°˜ë³µë¬¸
+				// ì¤‘ë³µì´ ìˆëƒ?				
 				if(lotto[i]==lotto[j]) {
 					i--;
 				}
@@ -24,7 +24,7 @@ public class LottoP {
 			System.out.printf("%d  ", lotto[j]);
 		}
 		
-		// °ªÀ» Á¤·ÄÇØº¸ÀÚ - ¹öºí Á¤·Ä
+		// ê°’ì„ ì •ë ¬í•´ë³´ì - ë²„ë¸” ì •ë ¬
 		for(int a=1; a<lotto.length; a++) {
 			for(int i=0; i<lotto.length-1; i++) {
 				System.out.println(i+":");
@@ -37,7 +37,7 @@ public class LottoP {
 		}
 		
 		
-		// °ªÀ» Ãâ·Â
+		// ê°’ì„ ì¶œë ¥
 		for(int i=0; i<lotto.length; i++) {
 			System.out.printf("%d  ", lotto[i]);
 		}
