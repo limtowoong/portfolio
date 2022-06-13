@@ -29,7 +29,7 @@ public class Me {
 			 int strike = 0;
 			 int ball = 0;
 			 
-			 System.out.print("¼ıÀÚ 3°³¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+			 System.out.print("ìˆ«ì 3ê°œë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 			 for(int i=0; i<3; i++) {
 				 answer[i] = sc.nextInt();
 			 }
@@ -49,10 +49,10 @@ public class Me {
 					 }
 				 }
 			 }
-			 System.out.println(strike+" ½ºÆ®¶óÀÌÅ©! "+ball+" º¼!");
+			 System.out.println(strike+" ìŠ¤íŠ¸ë¼ì´í¬! "+ball+" ë³¼!");
 			 
 			 if(strike==3) {
-				 System.out.println("´Ù ¸ÂÃß¼Ì½À´Ï´Ù.");
+				 System.out.println("ë‹¤ ë§ì¶”ì…¨ìŠµë‹ˆë‹¤.");
 				 break;
 			 }
 		 }
