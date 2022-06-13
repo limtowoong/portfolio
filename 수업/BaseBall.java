@@ -32,7 +32,7 @@ public class Me {
 			 int strike = 0;
 			 int ball = 0;
 			 
-			 System.out.print("¼ıÀÚ 3°³¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+			 System.out.print("ìˆ«ì 3ê°œë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 			 for(int i=0; i<3; i++) {
 				 answer[i] = sc.nextInt();
 			 }
@@ -53,17 +53,17 @@ public class Me {
 					 }
 				 }
 			 }
-			 System.out.println(strike+" ½ºÆ®¶óÀÌÅ©! "+ball+" º¼!");
+			 System.out.println(strike+" ìŠ¤íŠ¸ë¼ì´í¬! "+ball+" ë³¼!");
 			 
 			 if(strike==3) {
 		            if (count <= 2) {
-		                System.out.println("Âü ÀßÇß¾î¿ä!");
+		                System.out.println("ì°¸ ì˜í–ˆì–´ìš”!");
 		            } else if (count <= 5) {
-		                System.out.println("ÀßÇß¾î¿ä!");
+		                System.out.println("ì˜í–ˆì–´ìš”!");
 		            } else if (count <= 9) {
-		                System.out.println("º¸ÅëÀÌ³×¿ä!");
+		                System.out.println("ë³´í†µì´ë„¤ìš”!");
 		            } else {
-		                System.out.println("ºĞ¹ßÇÏ¼¼¿ä!");
+		                System.out.println("ë¶„ë°œí•˜ì„¸ìš”!");
 		            }
 				 break;
 			 }
