@@ -32,38 +32,38 @@ public class BaseBall {
 				int strike = 0;
 				int ball = 0;
 				
-				System.out.print("¼ıÀÚ 3°³¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä(¶ç¾î¾²±â·Î ±¸ºĞ)");
+				System.out.print("ìˆ«ì 3ê°œë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”(ë„ì–´ì“°ê¸°ë¡œ êµ¬ë¶„)");
 				answer[0] = sc.nextInt();
 				answer[1] = sc.nextInt();
 				answer[2] = sc.nextInt();
 				
-				// strike¸¦ ÆÇ´ÜÇÏ´Â Á¶°Ç¹®
+				// strikeë¥¼ íŒë‹¨í•˜ëŠ” ì¡°ê±´ë¬¸
 				for(int i=0; i<answer.length; i++) {
 					if(num[i]==answer[i]) {
 						strike++;
 					}
 				}
-				// ballÀ» ÆÇ´ÜÇÏ´Â Á¶°Ç¹®
+				// ballì„ íŒë‹¨í•˜ëŠ” ì¡°ê±´ë¬¸
 				if(num[0]==answer[1]||num[0]==answer[2]) ball++;
 				if(num[1]==answer[0]||num[1]==answer[2]) ball++;
 				if(num[2]==answer[0]||num[2]==answer[1]) ball++;
 				
-				System.out.println(strike+" ½ºÆ®¶óÀÌÅ©! "+ball+" º¼!");
+				System.out.println(strike+" ìŠ¤íŠ¸ë¼ì´í¬! "+ball+" ë³¼!");
 				
 				if(strike==3) {
-					System.out.println("¤º¤»");
+					System.out.println("ã…Šã…‹");
 					break;
 				}
 			}
-			// ÇÑ°×´õ?
-			System.out.println("ÇÑÆÇ ´õÇÒ·¡? ¤·¤·->¾Æ¹«¼ıÀÚ, ¤¤¤¤->2");
+			// í•œê²œë”?
+			System.out.println("í•œíŒ ë”í• ë˜? ã…‡ã…‡->ì•„ë¬´ìˆ«ì, ã„´ã„´->2");
 			int restart = sc.nextInt();
 			if(restart==2) {
-				System.out.println("°ÔÀÓÀ» Á¾·áÇÕ´Ï´Ù~~");
+				System.out.println("ê²Œì„ì„ ì¢…ë£Œí•©ë‹ˆë‹¤~~");
 				System.exit(0);
 				break;
 			} else {
-				System.out.println("°ÔÀÓÀ» ´Ù½Ã ½ÃÀÛÇÕ´Ï´Ù!!");			
+				System.out.println("ê²Œì„ì„ ë‹¤ì‹œ ì‹œì‘í•©ë‹ˆë‹¤!!");			
 			}
 		}
 	}
