@@ -11,10 +11,10 @@
 	int answer[] = new int[3];
 	Random r = new Random();
   
-  #### 배열에 난수 생성
+  #### ③ 배열에 난수 생성
 
 	while(true) {
-		for(int i=0; i<num.length; i++) {
+	for(int i=0; i<num.length; i++) {
 			num[i] = r.nextInt(9)+1;
 		}
 		if(!(num[0]==num[1]||num[1]==num[2]||num[0]==num[2])) {
@@ -22,5 +22,5 @@
 		}
 	}
     
-3.
+ #### ④ 
 
