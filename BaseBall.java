@@ -30,19 +30,19 @@ public static void main(String[] args) {
 		
 		do {
 		
-		System.out.print("1¹øÂ° :");
+		System.out.print("1ë²ˆì§¸ :");
 			ans[0] = sc.nextInt();
-		System.out.print("2¹øÂ° :");
+		System.out.print("2ë²ˆì§¸ :");
 			ans[1] = sc.nextInt();
-		System.out.print("3¹øÂ° :");
+		System.out.print("3ë²ˆì§¸ :");
 			ans[2] = sc.nextInt();
 			
 			if(ans[0]==0||ans[1]==0||ans[2]==0) {
-				System.out.println("0º¸´Ù ³ôÀº ¼ıÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+				System.out.println("0ë³´ë‹¤ ë†’ì€ ìˆ«ìë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 			}else if(ans[0]>9||ans[1]>9||ans[2]>9) {
-				System.out.println("9ÀÌÇÏ¿¡ ¼ıÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä");
+				System.out.println("9ì´í•˜ì— ìˆ«ìë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”");
 			}else if(ans[0]==ans[1]||ans[1]==ans[2]||ans[0]==ans[2]) {
-				System.out.println("Áßº¹°ªÀº ÀÔ·ÂÇÒ ¼ö ¾ø½À´Ï´Ù.");
+				System.out.println("ì¤‘ë³µê°’ì€ ì…ë ¥í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 			}
 			
 			}while((ans[0]==0)||(ans[1]==0)||(ans[2]==0)||
@@ -62,21 +62,21 @@ public static void main(String[] args) {
 					} 
 			}
 		}
-			 System.out.println(strike+" ½ºÆ®¶óÀÌÅ©! "+ball+" º¼!");
+			 System.out.println(strike+" ìŠ¤íŠ¸ë¼ì´í¬! "+ball+" ë³¼!");
 			 
 		if(strike==3) {
 				
 			if (cnt <= 2) {
-			System.out.println("Âü ÀßÇß¾î¿ä!");
+			System.out.println("ì°¸ ì˜í–ˆì–´ìš”!");
 			} else if (cnt <= 5) {
 					
-			System.out.println("ÀßÇß¾î¿ä!");
+			System.out.println("ì˜í–ˆì–´ìš”!");
 			} else if (cnt <= 9) {
 					
-			System.out.println("º¸ÅëÀÌ³×¿ä!");
+			System.out.println("ë³´í†µì´ë„¤ìš”!");
 			} else {
 					
-			System.out.println("ºĞ¹ßÇÏ¼¼¿ä!");
+			System.out.println("ë¶„ë°œí•˜ì„¸ìš”!");
 			}
 			break;
 		 }
