@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale-1.0,maximum-scale=1.0,user-scalable=no">
+<!-- width=device-width : 디바이스 만큼 가로너비. initial-scale:페이지가 보이는 기본 화면 비율 user-scalable : 페이지 확대 축소 가능여부-->
+<script>
+	var info = navigator.userAgent.toLowerCase(); //운영체제의 정보를 모두 소문자로 바꿈
+	var osImg = null;
+	
+	if(info.indexOf('windows')>=0) { //info에 들어있는 os정보가 windows면 windows사진
+		osImg = "windows.png";
+	} else if(info.indexOf('macintosh')  >=0) { 
+		osImg = "macintosh.png";
+	} else if(info.indexOf('iphone')  >=0) {
+		osImg = "iphone.png";
+	} else if(info.indexOf('android')  >=0) {
+		osImg = "android.png";
+	}
+	
+	document.write("<img src=\"images/" + osImg + "\">" , "<br>");
+	var scr = screen; //모니터 화면의 정보를 담고있는 브라우저객체를 변수 scr에 저장
+	var sc_w = scr.width;
+	var sc_h = scr.height;
+	
+	document.write("모니터 해상도 너비" + sc_w + "px", "<br>");
+	document.write("모니터 해상도 높이" + sc_h + "px", "<br>");
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
