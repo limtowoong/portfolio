@@ -108,6 +108,12 @@
 
 ## 설명 (js code)
 
+    const h1 = document.getElementById("time")
+    const go = document.getElementById("go")
+    const stop = document.getElementById("stop")
+    
+&nbsp;  Dom을 이용하여 3개의 객체를 변환
+
     function getTime(){
       const date = new Date()
       const hour = date.getHours();
@@ -117,7 +123,7 @@
       h1.textContent = time;
     }
 
-&nbsp; 호출된 시간을 시, 분, 초로 바꿔줍니다.
+&nbsp; 텍스트 형태인 h1에 호출된 시, 분, 초를 넣어줌
 
     go.onclick = function(){
       if(handleId == 0){
@@ -129,7 +135,7 @@
 
     getTime()
     
-&nbsp; 시간을 표시하기 위해 getTime을 호출해줍니다.
+&nbsp; 실행화면에 시간을 표시하기 위해 getTime을 호출해줍니다.
 
 # 실행  
     
