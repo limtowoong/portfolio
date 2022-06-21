@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+var menu = new Array();
+do {
+	input = prompt("먹고싶은 메뉴를 입력하시오.");
+	menu.push(input); //배열에 prompt창 통해 입력된 내용 저장
+} while (input != null); //배열에 입력을 반복하고, promt 창 '취소' 클릭 시 반복문 종료
+
+ menu.pop(); //취소 버튼 누르면서 null값이 들어가면 배열에 입력 종료
+  
+var menuNum = Math.floor(Math.random() * menu.length); //정수로 된 난수발생 (1 ~ 배열크기)
+var result = menu[menuNum];
+document.write(result);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

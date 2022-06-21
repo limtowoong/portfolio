@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	var id = ["1234"];
+	var pw = ["4321"];
+	
+	var check1 = false;
+	var check2 = false;
+	
+	var userid = prompt("아이디를 입력해주세요");
+	
+	if(userid == id) {
+		check1 = true;
+		var userpw = prompt("비밀번호을 입력해주세요");
+		
+			if(userpw == pw) {
+				check2 = true;
+			} else {
+				alert("비밀번호가 틀렸습니다.");
+			}
+			
+		} else {
+			alert("존재하지 않는 아이디입니다.");
+		}
+	
+	if( check1 && check2) {
+		alert(id+"님 환영합니다");
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>

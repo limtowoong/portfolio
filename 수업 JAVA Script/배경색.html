@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	
+function change() {
+	var color = ["red","yellow","blue","purple","pink","green"];
+	var ran = Math.floor(Math.random() * color.length);
+	document.getElementById('bodycolor').style.backgroundColor = color[ran];
+	}
+	
+</script>
+</head>
+<body id="bodycolor">
+	<button onclick="change()">배경색 바꾸기</button>
+</body>
+</html>
