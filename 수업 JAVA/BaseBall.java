@@ -30,7 +30,7 @@ public class S21516_BaseBall
 			int[]usr = new int[3];
 			int[]com = {x,y,z};
 			
-			System.out.println("¼ýÀÚ ¾ß±¸ °ÔÀÓ");
+			System.out.println("ìˆ«ìž ì•¼êµ¬ ê²Œìž„");
 			
 			count=0;
 			
@@ -38,30 +38,30 @@ public class S21516_BaseBall
 				count++;
 				
 				do {
-					System.out.println("\nÄ«¿îÆ®: "+count);
+					System.out.println("\nì¹´ìš´íŠ¸: "+count);
 					
 					BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 					
 					String user;
 					
-					System.out.println("Ã¹ ¹øÂ° :");
+					System.out.println("ì²« ë²ˆì§¸ :");
 					user = in.readLine();
 					usr[0]= new Integer(user).intValue();
 					
-					System.out.println("µÎ ¹øÂ° :");
+					System.out.println("ë‘ ë²ˆì§¸ :");
 					user = in.readLine();
 					usr[1]= new Integer(user).intValue();
 					
-					System.out.println("¼¼ ¹øÂ° :");
+					System.out.println("ì„¸ ë²ˆì§¸ :");
 					user = in.readLine();
 					usr[2]= new Integer(user).intValue();
 					
 					if((usr[0]==0)||(usr[1]==0)||(usr[2]==0)) {
-						System.out.println("0Àº ÀÔ·ÂÇÏÁö ¸¶¼¼¿ä. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+						System.out.println("0ì€ ìž…ë ¥í•˜ì§€ ë§ˆì„¸ìš”. ë‹¤ì‹œ ìž…ë ¥í•´ì£¼ì„¸ìš”.");
 					}else if((usr[0]>9)||(usr[1]>9)||(usr[2]>9)) {
-						System.out.println("1ºÎÅÍ 9±îÁöÀÇ ¼ýÀÚ Áß ÇÏ³ª¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+						System.out.println("1ë¶€í„° 9ê¹Œì§€ì˜ ìˆ«ìž ì¤‘ í•˜ë‚˜ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”. ë‹¤ì‹œ ìž…ë ¥í•´ì£¼ì„¸ìš”.");
 					}else if((usr[0]==usr[1])||(usr[1]==usr[2])||(usr[0]==usr[2])) {
-						System.out.println("¸ðµÎ ´Ù¸¥ ¼ýÀÚ¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä. ´Ù½Ã ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+						System.out.println("ëª¨ë‘ ë‹¤ë¥¸ ìˆ«ìžë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”. ë‹¤ì‹œ ìž…ë ¥í•´ì£¼ì„¸ìš”.");
 					}
 				}while((usr[0]==0)||(usr[1]==0)||(usr[2]==0)||
 						(usr[0]>9)||(usr[1]>9)||(usr[2]>9)||
@@ -102,13 +102,13 @@ public class S21516_BaseBall
 			}
 			System.out.println();
 			if(result<=2){
-			System.out.println("Âü ÀßÇß¾î¿ä!"); //½ÃµµÈ½¼ö°¡ 2¹ø ÀÌÇÏ
+			System.out.println("ì°¸ ìž˜í–ˆì–´ìš”!"); //ì‹œë„íšŸìˆ˜ê°€ 2ë²ˆ ì´í•˜
 			} else if(result<=5){
-			System.out.println("ÀßÇß¾î¿ä!");//½ÃµµÈ½¼ö°¡ 3¹øºÎÅÍ 5¹ø ÀÌÇÏ
+			System.out.println("ìž˜í–ˆì–´ìš”!");//ì‹œë„íšŸìˆ˜ê°€ 3ë²ˆë¶€í„° 5ë²ˆ ì´í•˜
 			} else if(result<=9){
-			System.out.println("º¸ÅëÀÌ³×¿ä!"); //½ÃµµÈ½¼ö°¡ 6¹ø~9¹ø
+			System.out.println("ë³´í†µì´ë„¤ìš”!"); //ì‹œë„íšŸìˆ˜ê°€ 6ë²ˆ~9ë²ˆ
 			} else{
-			System.out.println("ºÐ¹ßÇÏ¼¼¿ä!");// ½ÃµµÈ½¼ö°¡ 10¹ø
+			System.out.println("ë¶„ë°œí•˜ì„¸ìš”!");// ì‹œë„íšŸìˆ˜ê°€ 10ë²ˆ
 			}
 		}
 
