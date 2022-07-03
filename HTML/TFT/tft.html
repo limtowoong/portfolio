@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<link rel="stylesheet" href="tft.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" defer="defer"></script>
+<script src="tft.js" defer="defer" ></script>
+</head>
+
+
+<body>
+
+<div id='page'>
+	<header>
+		<div id='logo'>
+			<img src="images/logo.png" style="width: 70px; border-radius: 5px;">
+            <img src="images/mainlogo.png" style="width: 200px; margin: 0 0 5px 15px;">
+		</div>
+		<div id='top'>
+			<ul class="main-menu">
+                <li>
+                    <a href="#" >가이드</a>
+                    <ul class="sub"> 
+                        <li><a href="#">패치노트</a></li>
+                        <li><a href="#">리롤 확률</a></li>
+                        <li><a href="#">증강</a></li>
+                        <li><a href="#">라운드 정보</a></li>
+                        <li><a href="#">골드/경험치</a></li>
+                        <li><a href="#">피해량 공식</a></li>
+                        <li><a href="#">단축키</a></li>
+                        <li><a href="#">꼬마 전설이</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" >추천 메타</a>
+                    <ul class="sub">
+                        <li><a href="#">NEW 유튜버 가이드</a></li>
+                        <li><a href="#">v12.12 (시즌7)</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" >천상계 덱</a>
+                    <ul class="sub">
+                        <li><a href="#">덱 목록</a></li>
+                        <li><a href="#">최근 1위 덱</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" >종류</a>
+                    <ul class="sub">
+                        <li onclick="winOpen1()"><a href="#">아이템</a></li>
+                        <li onclick="winOpen2()"><a href="#">챔피언</a></li>
+                        <li onclick="winOpen3()"><a href="#">시너지</a></li>
+                    </ul>
+                </li>
+             </ul>
+		</div>
+	</header>
+    
+	<div class='clear'></div>
+	
+	<section>
+        <div class="imgs" >
+            <img src="images/main1.jpg">
+            <img src="images/main2.jpg">
+            <img src="images/main3.jpg">
+            <img src="images/main4.jpg">
+            <img src="images/main5.jpg">
+            <img src="images/main6.jpg">
+            <div class="welcome">
+                <h1>롤토체스 시즌7에 오신 것을 환영합니다.</h1>
+            </div>
+       </div>
+	</section>
+	
+	<div class='clear'></div>
+	
+	<div class="notice">
+             <h2> &nbsp; 패치 노트</h2>
+	    <table class="table">
+              <tr>
+	            <td><a href="#">( None )</a></td>
+	        </tr>
+            <tr>
+	            <td><a href="#">( None )</a></td>
+	        </tr>
+	        <tr>
+	            <td><a href="#">2022년 06월 29일(수) - 12.12b</a></td>
+	        </tr>
+	        <tr>
+	            <td><a href="#">2022년 06월 29일(수) - 12.12</a></td>
+	        </tr>
+	        <tr>
+	            <td><a href="#">2022년 06월 09일(목) - 12.11</a></td>
+	        </tr>
+	    </table>
+	</div>
+
+	<div id="galleryZone">
+        <p>
+			<button onclick="gallery(1)"><img src="images/아오신.png" style="width: 70px; height: 100%;"></button>
+			<button onclick="gallery(2)"><img src="images/아우렐리온솔.png" style="width: 70px; height: 100%;"></button>
+			<button onclick="gallery(3)"><img src="images/다에야.png" style="width: 70px; height: 100%;"></button>
+            <button onclick="gallery(4)"><img src="images/이다스.png" style="width: 70px; height: 100%;"></button>
+            <button onclick="gallery(5)"><img src="images/시오유.png" style="width: 70px; height: 100%;"></button>
+            <button onclick="gallery(6)"><img src="images/쉬바나.png" style="width: 70px; height: 100%;"></button>
+            <button onclick="gallery(7)"><img src="images/사이펜.png" style="width: 70px; height: 100%;"></button>
+		</p>
+		<p><img src="images/1.png" id="photo" alt=""></p>
+	</div>
+
+	<div class='clear'></div>
+	
+	<footer>
+        
+	</footer>
+    
+</div>
+</body>
+</html>
