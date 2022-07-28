@@ -59,9 +59,9 @@ public class Prj {
 		enter();
 		System.out.print("시스템 : 이세카이를 같이 모험할 동료를 선택해주세요.");
 		enter();
-		System.out.println("이름 : 린");
-		System.out.println("이름 : 모모카");
-		System.out.println("이름 : 카야");
+		System.out.print("이름 : 린 / ");
+		System.out.print("이름 : 모모카 / ");
+		System.out.print("이름 : 카야 ");
 		enter();
 		System.out.printf("이 녀석들은 내가 평소에 하던 '파란아카이브'에서 나오던 녀석들이잖아?", p1.getName());
 		enter();
