@@ -111,9 +111,14 @@ public class Game {
 		enter();
 		System.out.printf("%s : ㅈ..저 잘생겼거든요! ", p1.getName());
 		enter();
-		System.out.printf("%s : 그건 좀...", p1.getName());
+		System.out.printf("%s : 그건 좀...", p4.getName());
 		enter();
-		System.out.printf("%s : 하으으.... 아니ㅣㅣㅣ.... 이거 억까야! ");
+		System.out.printf("                아  이건 억까야! \n");
+		System.out.printf("              아 \n");
+		System.out.printf("            아 \n");
+		System.out.printf("%s : 따아 아");
+		enter();
+		System.out.print("  ");
 		enter();
 
 		System.out.print("Game Over");
