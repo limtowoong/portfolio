@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Prj {
 	public static void main(String[] args) throws InterruptedException {
-		// 플레이어2 만들고 돌 놓는 작업
+
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("이름을 입력해주세요.");
