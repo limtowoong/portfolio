@@ -6,7 +6,9 @@ public class Prj {
 		// 플레이어2 만들고 돌 놓는 작업
 		Scanner sc = new Scanner(System.in);
 		
-		Player p1 = new Player();
+		System.out.print("이름을 입력해주세요.");
+		String player1 = sc.next();
+		Player p1 = new Player(player1);
 		
 		enter();
 		System.out.printf("%s : 아 오늘도 힘들었다", p1.getName());
@@ -15,15 +17,17 @@ public class Prj {
 		enter();
 		System.out.print("땀을 흘리며 집에 들어간다");
 		enter();
-		System.out.printf("%s : (게임를 키며) 미카짱 오늘도 많이 기다렸지?", p1.getName());
+		System.out.printf("%s : ( 게임를 키며 ) 미카짱 오늘도 많이 기다렸지?", p1.getName());
 		enter();
-		System.out.print("미카 : 왜케 늦었서 경석쿤!");
+		System.out.printf("미카 : 왜케 늦었서 %s쿤!" ,p1.getName());
 		enter();
 		System.out.printf("%s : 고..고맨 미카짱", p1.getName());
 		enter();
 		System.out.printf("%s : ㅇ..와타시 학교 때문에 느..늦어버렸다랄까나?", p1.getName());
 		enter();
-		System.out.print("미카 : 괜찮아 경석쿤! 우리 데이트 할까?");
+		System.out.printf("미카 : 괜찮아 %s쿤!" , p1.getName());
+		enter();
+		System.out.printf("%s쿤 우리 오늘 데이트 할래?" , p1.getName());
 		enter();
 		System.out.printf("%s : 으응 조..좋아! \n", p1.getName());
 		enter();
@@ -31,17 +35,19 @@ public class Prj {
 		enter();
 		System.out.print("확인을 누른다.");
 		enter();
-		System.out.printf("%s : 뭐..뭐지? 갑자기 컴퓨터에서 빛이!!!", p1.getName());
+		System.out.print("확인을 누르자 모니터에서 빛이 뿜어져 나왔다.");
+		enter();
+		System.out.printf("%s : 엣? \n", p1.getName());
+		enter();
+		System.out.print("정신을 잃었다");
 		enter();
 		System.out.print("...");
 		enter();
-		System.out.printf("%s : 여기는 어디지?", p1.getName());
-		enter();
 		System.out.print("아무것도 보이질 않는다.");
 		enter();
-		System.out.printf("%s : 여긴 천국인가?", p1.getName());
-		enter();
 		System.out.print("??? : 용사님 일어나세요!");
+		enter();
+		System.out.printf("%s : 누구지?", p1.getName());
 		enter();
 		System.out.print("눈을 뜬다");
 		enter();
@@ -66,7 +72,7 @@ public class Prj {
 		enter();
 		System.out.printf("이 녀석들은 내가 평소에 하던 '파란아카이브'에서 나오던 녀석들이잖아?", p1.getName());
 		enter();
-		System.out.printf("이세카이 나쁘지 않을 지도?", p1.getName());
+		System.out.printf("이세카이 나쁘지 않을지도?", p1.getName());
 		enter();
 		System.out.printf("%s : 누굴선택할까?", p1.getName());
 		enter();
@@ -108,7 +114,7 @@ public class Prj {
 		for(int i=0; i<6; i++) {
 			System.out.println();
 		}
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 	}
 
 	
