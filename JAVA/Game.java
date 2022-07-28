@@ -54,10 +54,6 @@ public class Game {
 		enter();
 		System.out.printf("%s : ( 윽 역겨워 ) ", p3.getName());
 		enter();
-		System.out.printf("%s : 모모카짱 아..안녕?", p1.getName());
-		enter();
-		System.out.printf("%s : ( 으... ) 안녕^^ ", p3.getName());
-		enter();
 		System.out.printf("%s : %s아 우리 이세계를 구하러 가자!" , p3.getName(), p1.getName());
 		enter();
 		System.out.printf("%s : 이쿠죠! 모모카짱" , p1.getName());
