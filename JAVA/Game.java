@@ -107,10 +107,19 @@ public class Game {
 		enter();
 		System.out.printf("%s : ( 아프긴 하지만 기분이 좋다.. ) ", p1.getName());
 		enter();
-		System.out.printf("%s : ( 저 탐욕스러운 얼굴 매력적인걸? )", p4.etName());
+		System.out.printf("%s : ( 잠깐! 이게 아니지 ) ", p1.getName());
+		enter();
+		System.out.printf("%s : ㅈ..저 잘생겼거든요! ", p1.getName());
+		enter();
+		System.out.printf("%s : 그건 좀...", p1.getName());
+		enter();
+		System.out.printf("%s : 하으으.... 아니ㅣㅣㅣ.... 이거 억까야! ");
 		enter();
 
-		System.out.println(" 예(1) / 아니요(2) ");
+		System.out.print("Game Over");
+		enter();
+		System.out.print("계속하시겠습니까?");
+		System.out.print(" 예(1) / 아니요(2) ");
 		
 		int exit = sc.nextInt();
 		
