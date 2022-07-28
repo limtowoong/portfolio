@@ -6,8 +6,6 @@ public class Prj {
 
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("이름을 입력해주세요.");
-		String player1 = sc.next();
 		Player p1 = new Player(player1);
 		
 		enter();
@@ -62,13 +60,8 @@ public class Prj {
 		System.out.print("시스템 : 이세카이를 같이 모험할 동료를 선택해주세요.");
 		enter();
 		System.out.print("이름 : 린");
-		System.out.print("성격 : 시크함");
-		enter();
 		System.out.print("이름 : 모모카");
-		System.out.print("성격 : 귀여움");
-		enter();
 		System.out.print("이름 : 카야");
-		System.out.print("성격 : 상냥함");
 		enter();
 		System.out.printf("이 녀석들은 내가 평소에 하던 '파란아카이브'에서 나오던 녀석들이잖아?", p1.getName());
 		enter();
@@ -79,7 +72,7 @@ public class Prj {
 		
 		while(true) {
 
-			System.out.println("         1.린         2.모모카         3.카야         ");
+			System.out.println("         1. 린         2. 모모카         3. 카야         ");
 			enter();
 			
 			Game game = new Game();
