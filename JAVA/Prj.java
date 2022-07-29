@@ -17,7 +17,7 @@ public class Prj {
 		enter();
 		System.out.printf("%s : ( 게임를 키며 ) 미카짱 오늘도 많이 기다렸지?", p1.getName());
 		enter();
-		System.out.printf("미카 : 왜케 늦었서 %s쿤!" ,p1.getName());
+		System.out.printf("미카 : 왜이렇게 늦었어 %s쿤!" ,p1.getName());
 		enter();
 		System.out.printf("%s : 고..고맨 미카짱", p1.getName());
 		enter();
@@ -25,7 +25,7 @@ public class Prj {
 		enter();
 		System.out.printf("미카 : 괜찮아 %s쿤!" , p1.getName());
 		enter();
-		System.out.printf("%s쿤 우리 오늘 데이트 할래?" , p1.getName());
+		System.out.printf("미카 : %s쿤 우리 오늘 데이트 할래?" , p1.getName());
 		enter();
 		System.out.printf("%s : 으응 조..좋아! \n", p1.getName());
 		enter();
@@ -57,7 +57,7 @@ public class Prj {
 		enter();
 		System.out.print("시스템 : 당신은 이세카이에 왔습니다.");
 		enter();
-		System.out.printf("%s : 어..? 환청인가..", p1.getName());
+		System.out.printf("%s : ㅁ..머릿속에서 소리가 들려..!", p1.getName());
 		enter();
 		System.out.print("시스템 : 이세카이를 같이 모험할 동료를 선택해주세요.");
 		enter();
