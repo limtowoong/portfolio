@@ -58,7 +58,7 @@ public class Game {
 		enter();
 		System.out.printf("%s : 나는 돼지가 아니야!", p1.getName());
 		enter();
-		System.out.printf("%s : 한끼에 국밥 5그릇밖에 안 먹었다구!", p1.getName());
+		System.out.printf("%s : 한끼에 국밥 5그릇밖에 안 먹는다구!", p1.getName());
 		enter();
 		System.out.printf("%s : 후우..... ( 이새끼를 어떻게 하지? ) ", p3.getName());
 		enter();
@@ -68,7 +68,7 @@ public class Game {
 		enter();
 		System.out.printf("%s : 손나 바카나 내 인생에 전부를 가져가다니 다메다요", p1.getName());
 		enter();
-		System.out.printf("%s : ( 답없는 새끼 ) 우린 이제 안녕이다. ", p3.getName());
+		System.out.printf("%s : 우욱... 꺼져", p3.getName());
 		enter();
 		System.out.print("동료가 떠났습니다.");
 		enter();
@@ -113,14 +113,15 @@ public class Game {
 		enter();
 		System.out.printf("%s : 그건 좀...", p4.getName());
 		enter();
-		System.out.printf("                아  이건 억까야! \n");
-		System.out.printf("              아 \n");
-		System.out.printf("            아 \n");
-		System.out.printf("%s : 따아 아");
+		System.out.printf("%s : ( 게임에서는 초절정 미소녀들이 나만 보면 웃어주던데 어째서.. ) ", p1.getName());
 		enter();
-		System.out.print("  ");
+		System.out.printf("%s : ( 역시 현실은 다르다는 건가? 칙쇼!!! ) ", p1.getName());
+		enter();;
+		System.out.print("시스템 : !! 경고 !! ");
 		enter();
-
+		System.out.printf("시스템 : %s님께서 찐특 '급발진'을 하려고 합니다. ", p1.getName());
+		enter();
+		
 		System.out.print("Game Over");
 		enter();
 		System.out.print("계속하시겠습니까?");
