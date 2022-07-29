@@ -53,11 +53,15 @@ public class Prj {
 		enter();
 		System.out.print("??? : 용사님 이세계를 지켜주세요");
 		enter();
-		System.out.printf("%s : 무..무슨 소리세요!!", p1.getName());
+		System.out.printf("%s : 가..갑자기 무슨 소리세요!!", p1.getName());
 		enter();
 		System.out.print("시스템 : 당신은 이세카이에 왔습니다.");
 		enter();
+		System.out.printf("%s : 어..? 환청인가..", p1.getName());
+		enter();
 		System.out.print("시스템 : 이세카이를 같이 모험할 동료를 선택해주세요.");
+		enter();
+		System.out.printf("%s : 동료를 선택하라고? ", p1.getName());
 		enter();
 		System.out.print("이름 : 린 / ");
 		System.out.print("이름 : 모모카 / ");
