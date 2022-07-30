@@ -14,7 +14,7 @@ public class Game {
 		enter();
 		System.out.print("시스템 : '나나가미 린'을 소환합니다.");
 		enter();
-		System.out.print("린을 쳐다본다.");
+		System.out.print(" 린을 쳐다본다. ");
 		enter2();
 		System.out.printf("%s : ( 귀여운 미소녀일 줄 알았는데 너무 코와이하자나? )", p2.getName());
 		enter();
@@ -24,11 +24,11 @@ public class Game {
 		enter();
 		System.out.printf("%s : 이런 육수새끼가 내 동료라고?", p2.getName());
 		enter();
-		System.out.print("'나나가미 린'님께서 당신을 죽였습니다.");
+		System.out.print(" '나나가미 린'님께서 당신을 죽였습니다. ");
 		enter();
-		System.out.print("Game Over");
+		System.out.print(" Game Over ");
 		enter2();
-		System.out.print("계속하시겠습니까?");
+		System.out.print(" 계속하시겠습니까? ");
 		System.out.print(" 예(1) / 아니요(2) ");
 		
 		int exit = sc.nextInt();
@@ -57,25 +57,25 @@ public class Game {
 		System.out.printf("%s : 이런 돼지새끼랑 동료를 하라고?  ", p3.getName());
 		enter();
 		System.out.printf("%s : 나는 돼지가 아니야!", p1.getName());
-		enter();
+		enter2();
 		System.out.printf("%s : 한끼에 국밥 5그릇밖에 안 먹는다구!", p1.getName());
 		enter();
 		System.out.printf("%s : 하아... ", p3.getName());
 		enter2();
 		System.out.printf("%s : 너에게 기회를 줄께 ", p3.getName());
-		enter();
+		enter2();
 		System.out.printf("%s : 만약 하루에 국밥 한끼씩 먹고 애니를 안 본다면 동료가 되어줄께 ", p3.getName());
 		enter();
 		System.out.printf("%s : 손나 바카나 내 인생에 전부를 가져가다니 다메다요", p1.getName());
 		enter();
 		System.out.printf("%s : 우욱... 꺼져", p3.getName());
 		enter2();
-		System.out.print("동료가 떠났습니다.");
-		enter();
-	
-		System.out.print("Game Over");
+		System.out.print(" 동료가 떠났습니다. ");
 		enter2();
-		System.out.print("계속하시겠습니까?");
+	
+		System.out.print(" Game Over ");
+		enter2();
+		System.out.print(" 계속하시겠습니까? ");
 		System.out.print(" 예(1) / 아니요(2) ");
 		
 		int exit = sc.nextInt();
@@ -97,7 +97,7 @@ public class Game {
 		enter();
 		System.out.printf("%s : 안녕하세ㅇ... 까약 (찰싹)", p4.getName());
 		enter();
-		System.out.print("뺨을 맞았다");
+		System.out.print(" 뺨을 맞았다 ");
 		enter2();
 		System.out.printf("%s : ( 아팠다.. 하지만.... ) ", p1.getName());
 		enter();
@@ -116,13 +116,13 @@ public class Game {
 		System.out.printf("%s : 아직 덜 맞으셨네요 ", p4.getName());
 		enter();
 		System.out.printf("%s : 히익 ", p1.getName());
-		enter2();;
-		System.out.printf("%s : 조또마떼 카야짱 ", p1.getName());
-		enter();;
-		
-		System.out.print("Game Over");
 		enter2();
-		System.out.print("계속하시겠습니까?");
+		System.out.printf("%s : 조또마떼 카야짱 ", p1.getName());
+		enter();
+		
+		System.out.print(" Game Over ");
+		enter2();
+		System.out.print(" 계속하시겠습니까? ");
 		System.out.print(" 예(1) / 아니요(2) ");
 		
 		int exit = sc.nextInt();
