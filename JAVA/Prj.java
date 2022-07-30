@@ -20,19 +20,19 @@ public class Prj {
 		System.out.printf("미카 : 왜이렇게 늦었어 %s쿤!" ,p1.getName());
 		enter();
 		System.out.printf("%s : 고..고맨 미카짱", p1.getName());
-		enter();
+		enter2();
 		System.out.printf("%s : ㅇ..와타시 학교 때문에 느..늦어버렸다랄까나?", p1.getName());
 		enter();
 		System.out.printf("미카 : 괜찮아 %s쿤!" , p1.getName());
-		enter();
+		enter2();
 		System.out.printf("미카 : %s쿤 오늘은 어디갈까?" , p1.getName());
 		enter();
 		System.out.printf("%s : 어... ", p1.getName());
-		enter();
+		enter2();
 		System.out.printf("%s : 국밥집? ", p1.getName());
-		enter();
+		enter2();
 		System.out.print("미카 : 좋아! ");
-		enter();
+		enter2();
 		System.out.print("시스템 : 국밥집으로 이동하시겠습니까?");
 		enter();
 		System.out.print("확인을 누른다.");
@@ -40,19 +40,19 @@ public class Prj {
 		System.out.printf("%s : 미카짱 도착했어! ", p1.getName());
 		enter();
 		System.out.print("미카 : ... ");
-		enter();
+		enter2();
 		System.out.printf("%s : 미카짱 표정이 왜그래...? ", p1.getName());
 		enter();
 		System.out.printf("미카 : 고맨.. %s쿤.. ", p1.getName());
 		enter();
 		System.out.print("( 푸슉 )");
-		enter();
+		enter2();
 		System.out.printf("%s : 엣...? 미ㅋㅏ..ㅉ.. ", p1.getName());
 		enter();
 		System.out.print(" 눈 앞이 어두워진다.... ");
 		enter();
 		System.out.print("...");
-		enter();
+		enter2();
 		System.out.print("와타시 죽은걸까나?");
 		enter();
 		System.out.printf("??? : %s님 일어나세요 ");
@@ -60,13 +60,13 @@ public class Prj {
 		System.out.printf("%s : 누구지?", p1.getName());
 		enter();
 		System.out.print("눈을 뜬다");
-		enter();
+		enter2();
 		System.out.printf("%s : 누..누구세요?", p1.getName());
-		enter();
+		enter2();
 		System.out.print("??? : 저는 당신을 이세계로 소환시킨 '시스템'입니다.");
 		enter();
 		System.out.printf("%s : ㅅ..시스템..? ", p1.getName());
-		enter();
+		enter2();
 		System.out.printf("%s : ㅇ...와타시를 소환시킨 이유가 무엇이죠? ", p1.getName());
 		enter();
 		System.out.print("%s : 이세계에서 영웅으로 선택받았기 때문입니다. ");
@@ -76,7 +76,7 @@ public class Prj {
 		System.out.print("시스템 : 일단 이세카이를 같이 모험할 동료를 선택해주세요.");
 		enter();
 		System.out.printf("%s : 동료를 선택하라고? ", p1.getName());
-		enter();
+		enter2();
 		System.out.print("이름 : 린 / ");
 		System.out.print("이름 : 모모카 / ");
 		System.out.print("이름 : 카야 ");
@@ -86,7 +86,7 @@ public class Prj {
 		System.out.printf("이세카이 나쁘지 않을지도?", p1.getName());
 		enter();
 		System.out.printf("%s : 누구를 선택하지?", p1.getName());
-		enter();
+		enter2();
 		
 		while(true) {
 
@@ -126,6 +126,13 @@ public class Prj {
 			System.out.println();
 		}
 		Thread.sleep(3000);
+	}
+	
+	static void enter2() throws InterruptedException {
+		for(int i=0; i<6; i++) {
+			System.out.println();
+		}
+		Thread.sleep(2000);
 	}
 
 	
