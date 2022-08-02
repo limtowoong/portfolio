@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class Game {
 
+	int life = 0;
+	
 	public void 린(Player p2) throws InterruptedException {
 
 		Scanner sc = new Scanner(System.in);
@@ -28,16 +30,10 @@ public class Game {
 		enter2_5();
 		System.out.print(" '나나가미 린'님께서 당신을 죽였습니다. ");
 		enter2_5();
-		System.out.print(" Game Over ");
-		enter1_5();
-		System.out.print(" 계속하시겠습니까? ");
-		System.out.print(" 예(1) / 아니요(2) ");
 		
-		int exit = sc.nextInt();
-		
-		if(exit == 2) {
-
-		}
+		life --;
+		System.out.print(" 목숨이 깎여 " + life + "개의 목숨 남았습니다. ");
+		enter2();
 	}
 		
 	public void 모모카(Player p3) throws InterruptedException {
@@ -77,17 +73,9 @@ public class Game {
 		System.out.print(" 동료가 떠났습니다. ");
 		enter3();
 	
-		System.out.print(" Game Over ");
+		life --;
+		System.out.print(" 목숨이 깎여 " + life + "개의 목숨 남았습니다. ");
 		enter2();
-		System.out.print(" 계속하시겠습니까? ");
-		System.out.print(" 예(1) / 아니요(2) ");
-		
-		
-		int exit = sc.nextInt();
-		
-		if(exit == 2) {
-			System.exit(0);
-		}
 	}
 	
 	public void 카야(Player p4) throws InterruptedException {
@@ -130,18 +118,15 @@ public class Game {
 		enter2();
 		System.out.printf("다메요!!!");
 		enter2_5();
-		System.out.print(" Game Over ");
+		
+		life --;
+		System.out.print(" 목숨이 깎여 " + life + "개의 목숨 남았습니다. ");
 		enter2();
-		System.out.print(" 계속하시겠습니까? ");
-		System.out.print(" 예(1) / 아니요(2) ");
-		
-		int exit = sc.nextInt();
-		
-		if(exit == 2) {
-			
-			System.exit(0);
-			
-		}
+		System.out.print(" < ending scroll > ");
+	}
+	
+	static void end() throws InterruptedException {
+		Thread.sleep(500);
 	}
 	
 	static void enter1_5() throws InterruptedException {
@@ -171,5 +156,27 @@ public class Game {
 		}
 		Thread.sleep(3000);
 	}
-		
+				 
+	if ( life == 3 ) {
+		System.out.print(" 목숨을 모두 소진하였습니다.");	
+		System.out.print(" Game Over.");
+		enter2();
+		System.out.print("		The End			");
+		end();
+		System.out.print("					");
+		end();
+		System.out.print("					");
+		end();
+
+		System.out.print("					");
+		end();
+
+		System.out.print("					");
+		end();
+
+		System.out.print("					");
+		end();
+
+
+	}
 }
