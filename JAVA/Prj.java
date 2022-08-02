@@ -89,14 +89,14 @@ public class Prj {
 		enter1_5();
 		System.out.printf("%s : 그..그럼 ", p1.getName());
 		enter1_5();
-		System.out.printf("%s : 초미쇼녀 도모다찌 소환!!! ", p1.getName());
+		System.out.printf("%s : 초미소녀 도모다찌 소환!!! ", p1.getName());
 		enter2();
 		System.out.print(" 이름 : 린 / 이름 : 모모카 / 이름 : 카야 ");
 		enter2_5();
-		System.out.printf("ㅇ..이건! 내가 평소에 하는 '파란아카이브' 캐릭터들이다능!", p1.getName());
-		enter3();
-		System.out.printf(" ( 이세카이 나쁘지 않을지도? )", p1.getName());
+		System.out.printf("ㅇ..이건! '파란아카이브' 캐릭터들이다능!", p1.getName());
 		enter2_5();
+		System.out.printf(" ( 이세카이 나쁘지 않을지도? )", p1.getName());
+		enter2();
 		System.out.printf("%s : 누구를 데려갈지 모르겠다능!! ", p1.getName());
 		enter2();
 		
