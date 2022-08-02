@@ -154,15 +154,19 @@ public class Game {
 		System.out.print(" 목숨을 모두 소진하였습니다.");	
 		System.out.print(" Game Over.");
 		enter2();
-		System.out.print("			오타쿠	민경석			");
+		System.out.print("			    The End			");
 		end();
-		System.out.print("		   	  씹덕	 민경석			");
+		System.out.print("							");
 		end();
-		System.out.print("			파오후	민경석			");
+		System.out.print("			오타쿠	민경석		   ");
 		end();
-		System.out.print("		  	  돼지	 민경석			");
+		System.out.print("		   	  씹덕	 민경석		    ");
 		end();
-		System.out.print("		     자칭_존잘     민경석			");
+		System.out.print("			파오후	민경석		   ");
+		end();
+		System.out.print("		  	  돼지	 민경석		    ");
+		end();
+		System.out.print("		     자칭_존잘     민경석		  ");
 		end();
 
 
