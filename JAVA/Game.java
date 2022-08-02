@@ -48,26 +48,26 @@ public class Game {
 		enter2_5();
 		System.out.printf("%s : 이런 돼지새끼랑 동료를 하라고?  ", p3.getName());
 		enter2();
-		System.out.printf("%s : 나는 돼지가 아니라능!", p1.getName());
+		System.out.printf("%s : 나..나는 돼지가 아니라능!", p1.getName());
 		enter2();
-		System.out.printf("%s : 오늘 아침에 국밥 5그릇밖에 안 먹었다능!", p1.getName());
+		System.out.printf("%s : 오늘 아침에 국밥 5그릇밖에 안 먹었다능..", p1.getName());
 		enter2_5();
 		System.out.printf("%s : ... ", p3.getName());
 		enter1_5();
-		System.out.printf("%s : 돼지! 나랑 동료하고 싶지? ", p3.getName());
+		System.out.printf("%s : 나랑 동료 할 맘 있는 거지? ", p3.getName());
 		enter2();
-		System.out.printf("%s : 그렇다능! ", p1.getName());
+		System.out.printf("%s : 당연하다능! ", p1.getName());
 		enter1_5();
-		System.out.printf("%s : 그럼 ", p3.getName());
+		System.out.printf("%s : 그럼... 내 조건은..", p3.getName());
 		enter2();
 		System.out.printf("%s : 애니금지 국밥금지 오타쿠말투금지 어때? ", p3.getName());
 		enter3();
 		System.out.printf("%s : 손나 바카나 와타시의 인생에 전부를 가져가다니 다메다요 이라능!", p1.getName());
 		enter3();
 		System.out.printf("%s : 우욱... 꺼져", p3.getName());
-		enter3();
+		enter1_5();
 		System.out.print(" 동료가 떠났습니다. ");
-		enter3();
+		enter2();
 	
 		life --;
 		System.out.print(" 목숨이 깎여 " + life + "개의 목숨 남았습니다. ");
@@ -98,15 +98,15 @@ public class Game {
 		enter1_5();
 		System.out.printf("%s : 와타시를 더 때려달라능! ", p1.getName());
 		enter2();
-		System.out.printf("%s : 네, 알겠습니다. ^^ ", p4.getName());
-		enter2();
-		System.out.print(" ( 쓰윽 )");
+		System.out.printf("%s : ^^;; ", p4.getName());
+		enter1_5();
+		System.out.print("%s : ( 쓰윽 ) ", p4.getName());
 		enter1_5();
 		System.out.printf("%s : 카야짱 그건 뭐냐능...? ", p1.getName());
 		enter2();
 		System.out.printf("%s : ( 씨익 ) ", p4.getName());
 		enter1_5();
-		System.out.printf("%s : 히익?! ㅅ..소레하 오함마..? ", p1.getName());
+		System.out.printf("%s : 히익?! ㄱ...그건 오함마 아니냐능? ", p1.getName());
 		enter2();
 		System.out.printf("%s : 조또마떼! 카야짱 ", p1.getName());
 		enter2();
@@ -154,18 +154,18 @@ public class Game {
 		System.out.print(" 목숨을 모두 소진하였습니다.");	
 		System.out.print(" Game Over.");
 		enter2();
-		System.out.print("		T		");
+		System.out.print("			오타쿠	민경석			");
 		end();
-		System.out.print("		h		");
+		System.out.print("		   	  씹덕	 민경석			");
 		end();
-		System.out.print("		e		");
+		System.out.print("			파오후	민경석			");
 		end();
-		System.out.print("		E		");
+		System.out.print("		  	  돼지	 민경석			");
 		end();
-		System.out.print("		n		");
+		System.out.print("		     자칭_존잘     민경석			");
 		end();
-		System.out.print("		d		");
-		end();
+
+
 
 
 	}
