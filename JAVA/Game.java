@@ -4,9 +4,7 @@ import java.util.Scanner;
 
 public class Game {
 
-	int life = 3;
-	
-	public void 린(Player p2) throws InterruptedException {
+	public int 린(Player p2, int life) throws InterruptedException {
 
 		Scanner sc = new Scanner(System.in);
 		
@@ -27,12 +25,20 @@ public class Game {
 		System.out.print(" '나나가미 린'님께서 당신을 죽였습니다. ");
 		enter2_5();
 		
-		life --;
-		System.out.print(" 목숨이 깎여 " + life + "개의 목숨 남았습니다. ");
+		life -= 1;
+		if(life == 0) {
+			end();
+		}
+		else {
+			System.out.print(" 목숨이 깎여 " + life + "개의 목숨 남았습니다. ");
+		}
 		enter2();
+		
+		return life;
+		
 	}
 		
-	public void 모모카(Player p3) throws InterruptedException {
+	public int 모모카(Player p3, int life) throws InterruptedException {
 
 		Scanner sc = new Scanner(System.in);
 			
@@ -69,12 +75,19 @@ public class Game {
 		System.out.print(" 동료가 떠났습니다. ");
 		enter2();
 	
-		life --;
-		System.out.print(" 목숨이 깎여 " + life + "개의 목숨 남았습니다. ");
+		life -= 1;
+		if(life == 0) {
+			end();
+		}
+		else {
+			System.out.print(" 목숨이 깎여 " + life + "개의 목숨 남았습니다. ");
+		}
+		
 		enter2();
+		return life;
 	}
 	
-	public void 카야(Player p4) throws InterruptedException {
+	public int 카야(Player p4, int life) throws InterruptedException {
 
 		Scanner sc = new Scanner(System.in);
 				
@@ -100,7 +113,7 @@ public class Game {
 		enter2();
 		System.out.printf("%s : ^^;; ", p4.getName());
 		enter1_5();
-		System.out.print("%s : ( 쓰윽 ) ", p4.getName());
+		System.out.printf("%s : ( 쓰윽 ) ", p4.getName());
 		enter1_5();
 		System.out.printf("%s : 카야짱 그건 뭐냐능...? ", p1.getName());
 		enter2();
@@ -113,64 +126,49 @@ public class Game {
 		System.out.printf("%s : 다메요!!!!!!! ", p1.getName());
 		enter2();
 		
-		life --;
-		System.out.print(" 목숨이 깎여 " + life + "개의 목숨 남았습니다. ");
+		life -= 1;
+		if(life == 0) {
+			end();
+		}
+		else {
+			System.out.print(" 목숨이 깎여 " + life + "개의 목숨 남았습니다. ");
+		}
 		enter2();
-	}
-	
-	static void end() throws InterruptedException {
-		Thread.sleep(500);
+		return life;
 	}
 	
 	static void enter1_5() throws InterruptedException {
 		for(int i=0; i<6; i++) {
 			System.out.println();
 		}
-		Thread.sleep(1500);
+		Thread.sleep(100);
 	}
 	
 	static void enter2() throws InterruptedException {
 		for(int i=0; i<6; i++) {
 			System.out.println();
 		}
-		Thread.sleep(2000);
+		Thread.sleep(100);
 	}
 	
 	static void enter2_5() throws InterruptedException {
 		for(int i=0; i<6; i++) {
 			System.out.println();
 		}
-		Thread.sleep(2500);
+		Thread.sleep(100);
 	}
 		
 	static void enter3() throws InterruptedException {
 			for(int i=0; i<6; i++) {
 				System.out.println();
 		}
-		Thread.sleep(3000);
+		Thread.sleep(100);
+	}
+	static void end() {
+			System.out.print(" 목숨을 모두 소진하였습니다.");	
+			System.exit(0);
 	}
 				 
-	if ( life == 0 ) {
-		System.out.print(" 목숨을 모두 소진하였습니다.");	
-		System.out.print(" Game Over.");
-		enter2();
-		System.out.print("			    The End			");
-		end();
-		System.out.print("							");
-		end();
-		System.out.print("			오타쿠	민경석		   ");
-		end();
-		System.out.print("		   	  씹덕	 민경석		    ");
-		end();
-		System.out.print("			파오후	민경석		   ");
-		end();
-		System.out.print("		  	  돼지	 민경석		    ");
-		end();
-		System.out.print("		     자칭_존잘     민경석		  ");
-		end();
 
-
-
-
-	}
+	
 }
