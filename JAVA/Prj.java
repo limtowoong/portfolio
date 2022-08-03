@@ -100,6 +100,7 @@ public class Prj {
 		System.out.printf("%s : 누구를 데려갈지 모르겠다능!! ", p1.getName());
 		enter2();
 		
+		int life = 3;
 		while(true) {
 
 			System.out.println("         1. 린         2. 모모카         3. 카야         ");
@@ -108,19 +109,18 @@ public class Prj {
 			Game game = new Game();
 			
 			int menu = sc.nextInt();
-			
 			switch(menu) {
 			case 1 :
 				Player p2 = new Player("나나가미 린");
-				game.린(p2);
+				life = game.린(p2, life);
 				break;
 			case 2 :
 				Player p3 = new Player("유라기 모모카");
-				game.모모카(p3);
+				life  = game.모모카(p3, life);
 				break;
 			case 3 :
 				Player p4 = new Player("시라누이 카야");
-				game.카야(p4);
+				life = game.카야(p4, life);
 				break;
 			default :
 				System.out.printf("%s : 소코마데다 " , p1.getName());
@@ -136,28 +136,28 @@ public class Prj {
 		for(int i=0; i<6; i++) {
 			System.out.println();
 		}
-		Thread.sleep(1500);
+		Thread.sleep(100);
 	}
 	
 	static void enter2() throws InterruptedException {
 		for(int i=0; i<6; i++) {
 			System.out.println();
 		}
-		Thread.sleep(2000);
+		Thread.sleep(100);
 	}
 	
 	static void enter2_5() throws InterruptedException {
 		for(int i=0; i<6; i++) {
 			System.out.println();
 		}
-		Thread.sleep(2500);
+		Thread.sleep(100);
 	}
 		
 	static void enter3() throws InterruptedException {
 			for(int i=0; i<6; i++) {
 				System.out.println();
 		}
-		Thread.sleep(3000);
+		Thread.sleep(100);
 	}
 
 	
