@@ -3,8 +3,8 @@ import java.io.*;
 
 public class S21516_Gugudan_Game {
 
-  public static void main(String[] args) throws IOException
-  {
+  public static void main(String[] args) throws IOException {
+    
     int x, y;
     Random r= new Random();
 
