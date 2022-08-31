@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 public class S21516_Gugudan_Game {
-{
+
   public static void main(String[] args) throws IOException
   {
     int x, y;
