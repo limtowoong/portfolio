@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel = "stylesheet" href = "css/style.css">
+<title>Dark mode / White mode</title>
+<script type="text/javascript">
+	function Dark() {
+		document.body.style.backgroundColor = "black";
+		document.body.style.color = "white";
+		document.quertSelector('h2').style.color = 'gold';
+	}
+	function White() {
+		document.body.style.backgroundColor = "white";
+		document.body.style.color = "black";
+		document.quertSelector("h2").style.color = 'blue';
+	}
+</script>
+</head>
+<body>
+	<h2>Making Drak mode</h2>
+	<ol>
+		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+		<li>Suspendisse et odio in sem viverra dictum quis ac diam.</li>
+		<li>Nam sodales urna quis turpis tempor pellentesque.</li>
+	</ol>
+
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+		fermentum volutpat augue sit amet porttitor. Cras sed lorem ac urna
+		commodo bibendum vel molestie ex. Pellentesque aliquam lorem iaculis
+		erat scelerisque convallis. Mauris mattis urna sit amet finibus
+		blandit. Fusce porta vel velit quis sagittis. Ut scelerisque nunc a
+		enim tincidunt, at blandit ligula tincidunt. Morbi accumsan vulputate
+		lacus, ut tempor arcu feugiat et. Quisque vestibulum neque id ipsum
+		feugiat hendrerit eu at nunc.
+	</p>
+	
+	<input type = "button" value = "Dark mode" onclick = "Dark()">
+	<input type = "button" value = "White mode" onclick = "White()">
+</body>
+</html>
