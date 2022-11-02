@@ -8,13 +8,13 @@ create table board(
 )
 
 insert into BOARD values(
-	'1', '¹Î°æ¼®', 'test', 'Å×½ºÆ®', sysdate);
+	'1', 'ë¯¼ê²½ì„', 'test', 'í…ŒìŠ¤íŠ¸', sysdate);
 	
 insert into BOARD values(
-	'2', 'ÀüÇöÃ¶', 'test2', 'Å×½ºÆ®2', sysdate);
+	'2', 'ì „í˜„ì² ', 'test2', 'í…ŒìŠ¤íŠ¸2', sysdate);
 	
 insert into BOARD values(
-	'3', 'À§ÁØÇõ', 'test3', 'Å×½ºÆ®3', sysdate);
+	'3', 'ìœ„ì¤€í˜', 'test3', 'í…ŒìŠ¤íŠ¸3', sysdate);
 	
 drop table board;
 
@@ -30,13 +30,13 @@ create table member(
 )
 
 insert into MEMBER values(
-	'¹Î°æ¼®', 'GS', '1234','01012344321','tft');
+	'ë¯¼ê²½ì„', 'GS', '1234','01012344321','tft');
 	
 insert into MEMBER values(
-	'ÀüÇöÃ¶', 'HC', '4321','01043211234','sex');
+	'ì „í˜„ì² ', 'HC', '4321','01043211234','maple');
 	
 insert into MEMBER values(
-	'À§ÁØÇõ', 'JH', '4334','01012343234','poke');
+	'ìœ„ì¤€í˜', 'JH', '4334','01012343234','pokemon');
 	
 
 select * from MEMBER
