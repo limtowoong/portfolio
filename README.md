@@ -7,8 +7,6 @@ private int SumG;
 private double AvgG;
 private int RankG;
 
-  
-
 int getSum() {
 	return this.getKor() + this.getEng() + this.getMath();
 }
