@@ -7,13 +7,18 @@ private int SumG;
 private double AvgG;
 private int RankG;
 
+```
+
+성적을 받을 과목 생성
+
+```java
 int getSum() {
 	return this.getKor() + this.getEng() + this.getMath();
 }
 double getAvg() {
 	return this.getSum()/3;
 }
-
+```
 void printScore() {
 	System.out.printf(" %3s %3d %3d %3d %3d %3.2f %3d \n", this.getName(), this.getKor(), this.getEng(), this.getMath(), this.getSum(), this.getAvg(), this.getRank());
 	 }
