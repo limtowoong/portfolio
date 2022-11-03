@@ -1,3 +1,4 @@
+
 	private String name;
 	private int KorG;
 	private int EngG;
