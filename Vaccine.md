@@ -8,7 +8,7 @@
 
 ![image](https://user-images.githubusercontent.com/104752202/201570755-6b15aa35-a2a9-443c-b572-3f8a8417914b.png)
 
-index 페이지을 만들고 그 안에 header, nav, section, footer 페이지를 만들어줍니다. 
+header, nav, section, footer 페이지를 만들고 index 페이지에 연결해줍니다.
 ###### 0 ( +5 )
   
 <br><br><br>
