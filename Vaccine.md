@@ -57,19 +57,19 @@ header, nav, section, footer 페이지를 만들고 index 페이지에 연결해
 
 ![image](https://user-images.githubusercontent.com/104752202/201574906-9168f605-f288-4e08-a9b2-cd8c7ffff573.png)
 
-JUMIN 데이터는 오라클
+JUMIN 데이터는 쿼리문으로 입력
 
 <br>
 
 ![image](https://user-images.githubusercontent.com/104752202/201574963-3618620e-3556-4e70-bf3a-0b34c365c13b.png)
 
-HOSP 데이터는 오라클
+HOSP 데이터는 쿼리문으로 입력
 
 <br>
 
 ![image](https://user-images.githubusercontent.com/104752202/201575041-45d52e64-d402-4690-966e-525b072cc823.png)
 
-VACCRESV 데이터는 오라클 또는 폼
+VACCRESV 데이터는 쿼리문으로 입력 또는 폼화면에서 직접 입력
 
 <br><br><br>
 
