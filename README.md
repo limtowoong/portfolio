@@ -1,102 +1,15 @@
-<%@ page import = "java.sql.*" %>
-<%@ page import = "DB.DBConnect" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%
+![image](https://user-images.githubusercontent.com/104752202/201840402-f663bb77-ca89-48bf-8b4e-e04343b19976.png)
 
-int RESVNO = Integer.parseInt(request.getParameter("RESVNO"));
+![image](https://user-images.githubusercontent.com/104752202/201840535-a82fd35e-2e06-46a6-b315-8ada7f2c09f7.png)
 
-StringBuffer sb = new StringBuffer();
+![image](https://user-images.githubusercontent.com/104752202/201840689-54b96c37-7b47-4467-b5d7-fd7b52e54cf2.png)
 
-sb.append(" select v.RESVNO                                                                 ")
-.append(" ,j.NAME                                                                       ")
-.append(" ,case substr(v.JUMIN, 8, 1)                                                   ")
-.append(" 	when '1' then '남'                                                          ")
-.append(" 	when '2' then '여'                                                          ")
-.append(" end as gender                                                                 ")
-.append(" ,case v.HOSPCODE                                                              ")
-.append(" 	when 'H001' then '가_병원'                                                    ")
-.append(" 	when 'H002' then '나_병원'                                                    ")
-.append(" 	when 'H003' then '다_병원'                                                    ")
-.append(" 	when 'H004' then '라_병원'                                                    ")
-.append(" end as HOSPCODE                                                               ")
-.append(" ,to_char(v.RESVDATE,'yyyy\"년\"mm\"월\"dd\"일\"') as  RESVDATE                  ")
-.append(" ,substr(to_char(v.RESVTIME, 'FM0000'),1,2)                                      ")
-.append(" 	|| ':' || substr(to_char(v.RESVTIME, 'FM0000'),3,2) as RESVTIME               ")
-.append(" ,case VCODE                                                                     ")
-.append(" 	when 'V001' then 'A백신'                                                      ")
-.append(" 	when 'V002' then 'B백신'                                                      ")
-.append(" 	when 'V003' then 'C백신'                                                      ")
-.append(" end as VCODE                                                                    ")
-.append(" ,case h.HOSPADDR                                                                ")
-.append(" 	when '10' then '서울'                                                         ")
-.append(" 	when '20' then '대전'                                                         ")
-.append(" 	when '30' then '대구'                                                         ")
-.append(" 	when '40' then '광주'                                                         ")
-.append(" end as HOSPADDR                                                                 ")
-.append(" from TBL_VACCRESV_202108 v, TBL_JUMIN_202108 j, TBL_HOSP_202108 h               ")
-.append(" where v.JUMIN = j.JUMIN and v.hospcode = h.hospcode                             ")
-.append(" and v.RESVNO =").append(RESVNO);
-    
-    
-    String sql = sb.toString();
-    
-    Connection conn = DBConnect.getConnection();
-    PreparedStatement pstmt = conn.prepareStatement(sql);
-	ResultSet rs = pstmt.executeQuery();   
-    
-    %>
-    
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<link type="text/css" rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<jsp:include page="layout/header.jsp"/>
-<jsp:include page="layout/nav.jsp"/>	
- <section class="section">
-		<div class="title">예약번호 <%= RESVNO %>님의 예약조회</div>
-		 <%if(rs.next()){ %>
-			<table class="table_line align_center">
-				<tr>
-					<th>예약번호</th>
-					<th>성명</th>
-					<th>성별</th>
-					<th>병원이름</th>
-					<th>예약날짜</th>
-					<th>예약시간</th>
-					<th>백신코드</th>
-					<th>병원지역</th>
-				</tr>
-				<tr>
-					<td><%=rs.getString(1) %></td>
-					<td><%=rs.getString(2) %></td>
-					<td><%=rs.getString(3) %></td>
-					<td><%=rs.getString(4) %></td>
-					<td><%=rs.getString(5) %></td>
-					<td><%=rs.getString(6) %></td>
-					<td><%=rs.getString(7) %></td>
-					<td><%=rs.getString(8) %></td>
-				</tr>
-			</table>
-			<%}
-				else{ 
-			 %>
-				<p align="center">회원번호 <%= RESVNO %>의 회원 정보가 없습니다.</p>
-				
-						
-		   <%
-			   } 
-		   %>
-		   <div class="align_center">
-				<input type="button" value="돌아가기" onclick="location.href='search_reservation.jsp'">
-			</div> 
- </section>
- <footer>
-	<jsp:include page="layout/footer.jsp"></jsp:include>
- </footer>
-</body>
-</html>
+![image](https://user-images.githubusercontent.com/104752202/201841103-c8da0dd0-789f-4c23-a3ab-f361537999cd.png)
+
+![image](https://user-images.githubusercontent.com/104752202/201841271-034e92cc-bb88-4cf1-8e64-daf53e5fbb27.png)
+
+![image](https://user-images.githubusercontent.com/104752202/201841454-a1443a44-5820-41e4-a68d-67f3843d9763.png)
+
+![image](https://user-images.githubusercontent.com/104752202/201841532-13bfedcb-2b06-414b-9b70-95ff8df8436d.png)
+
+![image](https://user-images.githubusercontent.com/104752202/201841641-7a4bdf04-8a73-4e2d-81bc-1af22ad77fe7.png)
