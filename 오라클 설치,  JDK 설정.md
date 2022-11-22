@@ -1,3 +1,5 @@
+<div align="center">
+
 # 오라클 설치
 
 https://www.oracle.com/kr/downloads/
@@ -122,7 +124,4 @@ user에 대한 사용자 **Path**선택 후 **편집** 클릭
 <br>
 **새로 만들기** → **%JAVA_HOME%\bin** 입력 → **확인**클릭
 
-# 이클립스 설치
-
-
-
+</div>
